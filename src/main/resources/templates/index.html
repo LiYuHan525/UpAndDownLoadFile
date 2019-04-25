@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>index</title>
+</head>
+<body>
+    this is index page
+    <div th:if="${message}">
+<!--        th:if 判断是否为空，是空就渲染该组件-->
+        <h2>pretend here has a message</h2>
+        <h2 th:text="${message}"></h2>
+    </div>
+    <div th:unless="${message}">
+        <h3>why no message</h3>
+    </div>
+</body>
+</html>

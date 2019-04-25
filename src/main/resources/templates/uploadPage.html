@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"/>
+<head>
+    <meta charset="UTF-8"/>
+    <title>upload photo</title>
+</head>
+<body>
+<fieldset>
+    <legend>图片上传</legend>
+    <h2>只能上传单张10M以下的 PNG、JPG、GIF 格式的图片</h2>
+    <form action="/uploadAction" method="POST" enctype="multipart/form-data">
+        选择文件:<input type="file" name="file"/>
+        <input type="submit" value="上传"/>
+    </form>
+</fieldset>
+</body>
+</html>
